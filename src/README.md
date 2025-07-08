@@ -81,6 +81,7 @@ BankSystem/
 ├── DatabaseUtil.java            # DB connection utility
 ├── database.sql                 # DB creation script
 └── README.md                    # Description file
+├── dbconfig.txt                 # Read DB connection from text file
 ```
 
 ---
