@@ -91,8 +91,8 @@ public class BankApplication {
         System.out.print("Set account password: ");
         String password = scanner.nextLine();
         BankAccount account = new BankAccount(holderName, password);
-        account.saveToDatabase(); // احفظه الأول، علشان الـ ID يتولد
-        accounts.put(account.getAccountId(), account); // بعدها ضيفه في الخريطة بالـ ID الصحيح
+        account.saveToDatabase();
+        accounts.put(account.getAccountId(), account);
 
         System.out.printf("Account created. ID: %d\n", account.getAccountId());
     }

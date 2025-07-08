@@ -94,7 +94,6 @@ public class BankAccount {
             stmt.setDouble(3, balance);
             stmt.executeUpdate();
 
-            // احصل على الـ ID الجديد من قاعدة البيانات
             ResultSet rs = stmt.getGeneratedKeys();
             if (rs.next()) {
                 this.accountId = rs.getInt(1);
