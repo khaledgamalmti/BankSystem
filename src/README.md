@@ -80,8 +80,9 @@ BankSystem/
 ├── Transaction.java             # Transaction class
 ├── DatabaseUtil.java            # DB connection utility
 ├── database.sql                 # DB creation script
-└── README.md                    # Description file
-├── dbconfig.txt                 # Read DB connection from text file
+├── Main.java                    # Run App
+├── README.md                    # Description file
+└── dbconfig.txt                 # Read DB connection from text file
 ```
 
 ---
