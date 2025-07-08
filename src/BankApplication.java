@@ -1,4 +1,3 @@
-
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.HashMap;
@@ -9,15 +8,11 @@ public class BankApplication {
     private Map<Integer, BankAccount> accounts = new HashMap<>();
     private Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        new BankApplication().run();
-    }
-
     public BankApplication() {
         loadAccountsFromDatabase();
     }
 
-    private void run() {
+    public void run() {
         int choice;
         do {
             printMenu();
@@ -38,7 +33,10 @@ public class BankApplication {
         } while (choice != 8);
     }
 
-    private void printMenu() {
+
+
+
+private void printMenu() {
         System.out.println("\n1. Create Account");
         System.out.println("2. Credit Amount");
         System.out.println("3. Debit Amount");
